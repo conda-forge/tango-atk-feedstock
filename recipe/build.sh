@@ -1,3 +1,5 @@
+# Update the version in pom files (remove SNAPSHOT)
+mvn versions:set versions:update-child-modules -DnewVersion="${PKG_VERSION}" -DprocessAllModule -DgenerateBackupPoms=false -Prelease
 # Skip the tests because they require to have a tango database running
 mvn install -DskipTests
 
