@@ -10,6 +10,5 @@ call mvn license:aggregate-third-party-report
 copy target\site\aggregate-third-party-report.html .
 
 mkdir "%PREFIX%\share\java"
-copy assembly\target\JTango-%PKG_VERSION%.jar %PREFIX%\share\java\JTango.jar
 copy widget\target\ATKWidget-%PKG_VERSION%.jar %PREFIX%\share\java\ATKWidget.jar
 copy widget\target\ATKCore-%PKG_VERSION%.jar %PREFIX%\share\java\ATKCore.jar
