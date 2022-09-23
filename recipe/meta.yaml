@@ -10,8 +10,7 @@ source:
   sha256: 8d93d584684023ae67e6f5acd62c5c78b00b321c905ba70ef1a45de59071f532
 
 build:
-  number: 0
-  noarch: generic
+  number: 1
 
 requirements:
   build:
@@ -23,10 +22,12 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/share/java/ATKCore.jar
-    - test -f ${PREFIX}/share/java/ATKCore-${PKG_VERSION}.jar
-    - test -f ${PREFIX}/share/java/ATKWidget.jar
-    - test -f ${PREFIX}/share/java/ATKWidget-${PKG_VERSION}.jar
+    - test -f ${PREFIX}/share/java/ATKCore.jar                   # [unix]
+    - test -f ${PREFIX}/share/java/ATKCore-${PKG_VERSION}.jar    # [unix]
+    - test -f ${PREFIX}/share/java/ATKWidget.jar                 # [unix]
+    - test -f ${PREFIX}/share/java/ATKWidget-${PKG_VERSION}.jar  # [unix]
+    - if not exist %PREFIX%\share\java\ATKCore.jar exit 1        # [win]
+    - if not exist %PREFIX%\share\java\ATKWidget.jar exit 1      # [win]
 
 about:
   home: https://www.tango-controls.org
