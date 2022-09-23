@@ -11,4 +11,4 @@ copy target\site\aggregate-third-party-report.html .
 
 mkdir "%PREFIX%\share\java"
 copy widget\target\ATKWidget-%PKG_VERSION%.jar %PREFIX%\share\java\ATKWidget.jar
-copy widget\target\ATKCore-%PKG_VERSION%.jar %PREFIX%\share\java\ATKCore.jar
+copy core\target\ATKCore-%PKG_VERSION%.jar %PREFIX%\share\java\ATKCore.jar
