@@ -1,5 +1,5 @@
 {% set name = "tango-atk" %}
-{% set version = "9.3.28" %}
+{% set version = "9.3.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/atk/-/archive/{{ version }}/atk-{{ version }}.tar.gz
-  sha256: 8d93d584684023ae67e6f5acd62c5c78b00b321c905ba70ef1a45de59071f532
+  sha256: fc8b8e998cbbffff02557c4a82c632ccccce299d37b2a636a8f7880b87f9d3d6
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license_file:
     - LICENSE
     - aggregate-third-party-report.html
-  summary: 'Collection of java-classes to help build applications which interact with Tango devices'
+  summary: Collection of java-classes to help build applications which interact with Tango devices
   description: |
     Tango ATK is a collection of java-classes to help build applications
     which interact with Tango devices.
