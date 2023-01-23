@@ -14,10 +14,10 @@ build:
 
 requirements:
   build:
-    - openjdk 8
+    - openjdk 17
     - maven
   run:
-    - openjdk >=8
+    - openjdk >=17
     - jtango >=9.6.8,<10.0.0
 
 test:
