@@ -1,11 +1,11 @@
-About tango-atk
-===============
+About tango-atk-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tango-atk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.tango-controls.org
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tango-atk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of java-classes to help build applications which interact with Tango devices
 
