@@ -1,5 +1,5 @@
 {% set name = "tango-atk" %}
-{% set version = "9.4.10" %}
+{% set version = "9.4.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/atk/-/archive/{{ version }}/atk-{{ version }}.tar.gz
-  sha256: 1cd286ea25cd7e2cecd2f885bacc994224e371fd4907d58a06c5c847b6ea9415
+  sha256: 22497a26179d1f35b596f14c8a96e40c685c1d5139a175ff22f6f3d0196f8648
 
 build:
   number: 0
