@@ -24,19 +24,10 @@ requirements:
     - jtango >=9.6.8,<10.0.0
 
 tests:
-  - script:
-      - if: unix
-        then: test -f ${PREFIX}/share/java/ATKCore.jar
-      - if: unix
-        then: test -f ${PREFIX}/share/java/ATKCore-${PKG_VERSION}.jar
-      - if: unix
-        then: test -f ${PREFIX}/share/java/ATKWidget.jar
-      - if: unix
-        then: test -f ${PREFIX}/share/java/ATKWidget-${PKG_VERSION}.jar
-      - if: win
-        then: if not exist %PREFIX%\share\java\ATKCore.jar exit 1
-      - if: win
-        then: if not exist %PREFIX%\share\java\ATKWidget.jar exit 1
+  - package_contents:
+      files:
+        - share/java/ATKCore.jar
+        - share/java/ATKWidget.jar
 
 about:
   license: LGPL-3.0-or-later
