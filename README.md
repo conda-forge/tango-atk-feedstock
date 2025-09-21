@@ -3,7 +3,7 @@ About tango-atk-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tango-atk-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.tango-controls.org
+Home: https://www.tango-controls.org/
 
 Package license: LGPL-3.0-or-later
 
@@ -14,7 +14,6 @@ Development: https://gitlab.com/tango-controls/atk
 Tango ATK is a collection of java-classes to help build applications
 which interact with Tango devices.
 Tango-Controls is a software toolkit for building control systems.
-
 
 Current build status
 ====================

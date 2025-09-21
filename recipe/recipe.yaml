@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: tango-atk
+  version: 9.4.15
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://gitlab.com/tango-controls/atk/-/archive/${{ version }}/atk-${{ version }}.tar.gz
+  sha256: 43ec607a2c00eaef2c3603ba5fe3dcc041ea0f0dca62e2ff745307dbb4c5d60c
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - openjdk 17.*
+    - maven
+  run:
+    - openjdk >=17
+    - jtango >=9.6.8,<10.0.0
+
+tests:
+  - package_contents:
+      files:
+        - share/java/ATKCore.jar
+        - share/java/ATKWidget.jar
+
+about:
+  license: LGPL-3.0-or-later
+  license_file:
+    - LICENSE
+    - aggregate-third-party-report.html
+  summary: Collection of java-classes to help build applications which interact with Tango devices
+  description: |
+    Tango ATK is a collection of java-classes to help build applications
+    which interact with Tango devices.
+    Tango-Controls is a software toolkit for building control systems.
+  homepage: https://www.tango-controls.org
+  repository: https://gitlab.com/tango-controls/atk
+
+extra:
+  recipe-maintainers:
+    - beenje
