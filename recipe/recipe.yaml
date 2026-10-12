@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tango-atk
-  version: "10.0.0"
+  version: "10.0.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/atk/-/archive/${{ version }}/atk-${{ version }}.tar.gz
-  sha256: 032ab601ec36bceaebce9455701a6237a86de715dd8ac5d6c69c938f8b6ef034
+  sha256: 0bf657d5439c6d81b7669f5b5e5a98690e27cab793ac515e0da40c0a7a8c6a2c
 
 build:
   number: 0
